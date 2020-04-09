@@ -92,7 +92,7 @@ class PortForwardRoute extends LensApi {
       const started = await portForward.start()
       if (!started) {
         this.respondJson(response, {
-          message: "FOO"
+          message: "Failed to open port-forward"
         }, 400)
         return
       }
